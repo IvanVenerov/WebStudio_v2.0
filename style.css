@@ -1,0 +1,11 @@
+ul {
+    list-style: none;
+}
+footer {
+    background-color: #808080;
+}
+.secbag {
+    background-color: #808080;
+    height: 500px;
+    width: 500px;
+}
