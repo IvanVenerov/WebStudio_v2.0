@@ -1,180 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>WebStudio</title>
+</head>
 
-    <title>WebStudio</title>
-  </head>
-  <body>
-    <!--Header-->
-    <header>
-      <!--Conditional logo-->
-      <a href="/">
-        <img src="./images_1/logotip.jpg" alt="WebStudioLOGO" />
-      </a>
-      <nav>
-        <ul>
-          <!--Links to other Webstudio`s pages-->
-          <li>
-            <a href="/">Studio</a>
-          </li>
-          <li>
-            <a href="/">Portfolio</a>
-          </li>
-          <li>
-            <a href="/">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!--Contacts on main page-->
-      <address>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <p>+38 096 111 11 11</p>
-          </li>
-        </ul>
-      </address>
-    </header>
-    <!--Main-->
-    <main>
-      <!--Order-->
-      <section class="secbag">
-        <h1>Effective solutions for your business</h1>
-        <button type="button" class="knopka">Order a service</button>
-      </section>
-      <!-- Our qualities -->
-      <section>
-        <h2 class="hidethistag">Our qualities</h2>
-        <ul>
-          <li>
-            <h3>Attention to detail</h3>
-            <p>
+<body>
+  <!--Header-->
+  <header>
+    <!--Conditional logo-->
+    <div style="font-family: 'Raleway', sans-serif; font-weight: 700">
+      <a href="/" class="logo-link-header"><span style="color: #2196f3">Web</span><span
+          style="color: #000000">Studio</span></a>
+    </div>
+    <nav>
+      <ul>
+        <!--Links to other Webstudio`s pages-->
+        <li>
+          <a href="/" class="header-nav-first-list-item">Studio</a>
+        </li>
+        <li>
+          <a href="/" class="header-nav-second-list-item">Portfolio</a>
+        </li>
+        <li>
+          <a href="/" class="header-nav-third-list-item">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Contacts on main page-->
+    <address>
+      <ul>
+        <li>
+          <a href="mailto:info@devstudio.com" class="header-contacts-email">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="header-contacts-tel">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </address>
+  </header>
+  <!--Main-->
+  <main>
+    <!--Order-->
+    <section class="solutions-block">
+      <h1>Effective solutions for your business</h1>
+      <button type="button" class="button-order">Order a service</button>
+    </section>
+    <!-- Our qualities -->
+    <section>
+      <h2 style="display: none">Our qualities</h2>
+      <ul>
+        <li>
+          <div class="frame-1">
+            <h3 class="frame-title">Attention to detail</h3>
+            <p class="frame-subtitle">
               Ideological considerations, and even the beginning of daily work
               on forming a position.
             </p>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <h3>Punctuality</h3>
-            <p>
+        <li>
+          <div class="frame-2">
+            <h3 class="frame-title">Punctuality</h3>
+            <p class="frame-subtitle">
               The task of organization, especially the framework and place of
               personnel training, falls under its purview.
             </p>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <h3>Planning</h3>
-            <p>
+        <li>
+          <div class="frame-3">
+            <h3 class="frame-title">Planning</h3>
+            <p class="frame-subtitle">
               Consultation with a wide range of stakeholders is also largely
               responsible for it.
             </p>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <h3>Modern technologies</h3>
-            <p>
+        <li>
+          <div class="frame-4">
+            <h3 class="frame-title">Modern technologies</h3>
+            <p class="frame-subtitle">
               The significance of these issues is so obvious that the
               implementation of planned tasks.
             </p>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-      <!--What we do-->
-      <section>
-        <h2>What we do</h2>
-        <ul class="listphoto">
-          <li>
-            <img src="./images_1/box1.jpg" alt="programming" />
-          </li>
-          <li>
-            <img src="./images_1/box2.jpg" alt="working" />
-          </li>
-          <li>
-            <img src="./images_1/box3.jpg" alt="designing" />
-          </li>
-        </ul>
-      </section>
+    <!--What we do-->
+    <section>
+      <h2 class="our-job-title">What we do</h2>
+      <ul>
+        <li>
+          <img src="./images_1/box1.jpg" alt="programming" class="job-photo-1" />
+        </li>
+        <li>
+          <img src="./images_1/box2.jpg" alt="working" class="job-photo-2" />
+        </li>
+        <li>
+          <img src="./images_1/box3.jpg" alt="designing" class="job-photo-3" />
+        </li>
+      </ul>
+    </section>
 
-      <!--Our team-->
-      <section>
-        <h2>Our team</h2>
-        <ul>
-          <li>
-            <img
-              src="./images_1/Igor.jpg"
-              alt="IgorDemyanenko"
-              weight="270"
-              height="300"
-            />
-            <h3>Igor Demyanenko</h3>
-            <p>Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images_1/Olga.jpg"
-              alt="OlgaRepina"
-              weight="270"
-              height="300"
-            />
-            <h3>Olga Repina</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images_1/Mykola.jpg"
-              alt="MykolaTarasov"
-              weight="270"
-              height="300"
-            />
-            <h3>Mykola Tarasov</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images_1/Mykhailo.jpg"
-              alt="MykhailoErmakov"
-              weight="270"
-              height="300"
-            />
-            <h3>Mykhailo Ermakov</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer>
-      <a href="/">
-        <img src="./images_1/logotip_footer.jpg" alt="WebStudioLOGO_footer" />
-      </a>
-      <address>
-        <ul>
-          <li>
-            <p>Kyiv, Lesi Ukrainky Avenue, 26</p>
-          </li>
-          <li>
-            <p>info@devstudio.com</p>
-          </li>
-          <li>
-            <p>+38 096 111 11 11</p>
-          </li>
-        </ul>
-      </address>
-    </footer>
-  </body>
+    <!--Our team-->
+    <section class="our-team-box">
+      <h2 class="our-team-title">Our team</h2>
+      <div class="perviy">
+        <img src=" ./images_1/Igor.jpg" alt="IgorDemyanenko" weight="270" height="300" />
+        <h3 class="titlename">Igor Demyanenko</h3>
+        <p class="subtitlesn">Product Designer</p>
+      </div>
+      <div class="vtoroy">
+        <img src="./images_1/Olga.jpg" alt="OlgaRepina" weight="270" height="300" />
+        <h3 class="titlename">Olga Repina</h3>
+        <p class="subtitlesn">Frontend Developer</p>
+      </div>
+      <div class="tretiy">
+        <img src="./images_1/Mykola.jpg" alt="MykolaTarasov" weight="270" height="300" />
+        <h3 class="titlename">Mykola Tarasov</h3>
+        <p class="subtitlesn">Marketing</p>
+      </div>
+      <div class="cetvertiy">
+        <img src="./images_1/Mykhailo.jpg" alt="MykhailoErmakov" weight="270" height="300" />
+        <h3 class="titlename">Mykhailo Ermakov</h3>
+        <p class="subtitlesn">UI Designer</p>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer>
+    <address>
+      <ul>
+        <li>
+          <p class="footer-subtitle1">Kyiv, Lesi Ukrainky Avenue, 26</p>
+        </li>
+        <li>
+          <p class="footer-subtitle2">info@devstudio.com</p>
+        </li>
+        <li>
+          <p class="footer-subtitle3">+38 096 111 11 11</p>
+        </li>
+      </ul>
+    </address>
+  </footer>
+</body>
+
 </html>
