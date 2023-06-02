@@ -1,189 +1,67 @@
+/* Даємо баді (для всій сторінки сайту) шрифт Roboto, тому що він на всій сторінці окрім лого якому ми потім дамо шрифт */
 body {
   font-family: "Roboto";
+  font-style: normal;
 }
-header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-
-  background: #ffffff;
-}
+/* Відключаємо точки від всіх списків  ul тому що вони не потрібні*/
 ul {
   list-style: none;
 }
-.logo-link-header {
+/* Відключаємо підкреслення посилась фіол.лінією */
+a {
   text-decoration: none;
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
+}
+/* Робимо логотип як на макеті ( не забуваємо дати йому інший шрифт Raleway, також прописуємо line height індексом )*/
+.logo-header-link {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.logo-link-footer {
-  text-decoration: none;
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-}
-.header-nav-first-list-item {
-  color: #212121;
-  text-decoration: none;
-  position: absolute;
-  width: 45px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
+/* Прописуємо властивості для всіх елементів списка неву */
+.nav-list-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.header-nav-second-list-item {
-  text-decoration: none;
-  position: absolute;
-  width: 72px;
-  height: 16px;
-  left: 552px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: #212121;
 }
-.header-nav-third-list-item {
-  text-decoration: none;
-  position: absolute;
-  width: 64px;
-  height: 16px;
-  left: 679px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
+/* Пропишемо ховер (при наведені зміну коліру текста) */
+.nav-list-item:hover {
+  color: #2196f3;
+}
+/* Пропишемо властивості елементів списку контактів */
+.contacts-list-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: #212121;
-}
-.header-nav-first-list-item:hover {
-  color: #2196f3;
-}
-.header-nav-second-list-item:hover {
-  color: #2196f3;
-}
-.header-nav-third-list-item:hover {
-  color: #2196f3;
-}
-.header-contacts-email {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
   color: #757575;
 }
-.header-contacts-email:hover {
+/* Також пропишемо ховер */
+.contacts-list-item:hover {
   color: #2196f3;
 }
-.header-contacts-tel {
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #757575;
-}
-.header-contacts-tel:hover {
-  color: #2196f3;
-}
-.solutions-block {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 65px;
-
-  background: #2f303a;
-}
+/* Пропишемо властивості для заголовку ( Не буде відображатися тому що колір білий, як і колір фону ) */
 h1 {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 265px;
-
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
-.button-order {
-  position: absolute;
-  width: 152px;
-  height: 30px;
-  left: 724px;
-  top: 425px;
-
-  font-family: "Roboto";
-  font-style: normal;
+/* Добавимо властивості для кнопки */
+.order-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -191,220 +69,87 @@ h1 {
 
   color: #ffffff;
 }
-.frame-1 {
+/* Скриваємо текст в h2 */
+.subtitle {
   position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-.frame-2 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 515px;
-  top: 774px;
-}
-.frame-3 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 815px;
-  top: 774px;
-}
-.frame-4 {
-  position: absolute;
-  width: 271px;
-  height: 101px;
-  left: 1119px;
-  top: 774px;
-}
+/* Прописуємо властивості для 4 наших блоків з нашими якостями */
 .frame-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #212121;
 }
+/* А також для 4 підзаголовками */
 .frame-subtitle {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.7;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
+/* Тепер пропишемо для заголовку де буде інший блок з фото */
 .our-job-title {
-  position: absolute;
-  width: 366px;
-  height: 42px;
-  left: 617px;
-  top: 969px;
-
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.job-photo-1 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-}
-.job-photo-2 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1061px;
-}
-.job-photo-3 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1061px;
-}
-.our-team-box {
-  position: absolute;
-  width: 1600px;
-  height: 742px;
-  left: 0px;
-  top: 1355px;
-  background: #f5f4fa;
-}
+/* А тепер для заголовку для іншого блоку з фотографіями кого-сь */
 .our-team-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
-.perviy {
-  position: absolute;
-  width: 270px;
-  height: 297.72px;
-  left: 215px;
-}
-.vtoroy {
-  position: absolute;
-  width: 270px;
-  height: 297.72px;
-  left: 515px;
-}
-.tretiy {
-  position: absolute;
-  width: 270px;
-  height: 297.72px;
-  left: 815px;
-}
-.cetvertiy {
-  position: absolute;
-  width: 270px;
-  height: 297.72px;
-  left: 1115px;
-}
+/* Тепер добавимо властивості для ФІ під фото (приберемо text-align: center; як в макеті тому що поки не добавили карточку для фото ФІ, позиції, добавими пізніше */
 .titlename {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
-.subtitlesn {
-  font-family: "Roboto";
-  font-style: normal;
+/* А тепер для посади */
+.position {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
-footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
-
-  background: #2f303a;
-}
-.footer-subtitle1 {
-  position: absolute;
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 50px;
-
-
-  font-family: "Roboto";
-  font-style: normal;
+/* Добавимо в футері властивості для фіз. адреси */
+.footer-subtitle {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.17;
   letter-spacing: 0.03em;
-
   color: #ffffff;
+  font-style: normal;
 }
-.footer-subtitle2 {
-  position: absolute;
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 100px;
-
-
-  font-family: "Roboto";
+/* Та властивості для телефону та пошти */
+.footer-subtitle1 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-subtitle3 {
-  position: absolute;
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 150px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* Футер не буде видно, тому що колір елементів білий як і фон баді */
+
+/* Готово */
+/* (Мабуть) */
