@@ -21,6 +21,13 @@ ul {
 a {
   text-decoration: none;
 }
+header {
+  width: 1600px;
+  height: 100px;
+}
+.nav-list {
+  display: flex;
+}
 /* Робимо логотип як на макеті ( не забуваємо дати йому інший шрифт Raleway, також прописуємо line height індексом )*/
 .logo-header-link {
   font-family: "Raleway";
@@ -39,10 +46,14 @@ a {
   letter-spacing: 0.02em;
 
   color: #212121;
+  margin-left: 55px;
 }
 /* Пропишемо ховер (при наведені зміну коліру текста) */
 .nav-list-item:hover {
   color: #2196f3;
+}
+.contacts-list {
+  display: flex;
 }
 /* Пропишемо властивості елементів списку контактів */
 .contacts-list-item {
@@ -52,11 +63,18 @@ a {
   letter-spacing: 0.02em;
   font-style: normal;
   color: #757575;
+  margin-left: 50px;
 }
 /* Також пропишемо ховер */
 .contacts-list-item:hover {
   color: #2196f3;
 }
+.heading {
+  height: 600px;
+  width: 1600px;
+  background-color: #2F303A;
+}
+
 /* Пропишемо властивості для заголовку ( Не буде відображатися тому що колір білий, як і колір фону ) */
 h1 {
   font-weight: 900;
@@ -79,6 +97,9 @@ h1 {
 
   color: #ffffff;
 }
+.lists-container {
+  margin-top: 110px;
+}
 /* Скриваємо текст в h2 */
 .subtitle {
   position: absolute;
@@ -94,8 +115,8 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #212121;
+
 }
 /* А також для 4 підзаголовками */
 .frame-subtitle {
@@ -104,6 +125,7 @@ h1 {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
 }
 /* Тепер пропишемо для заголовку де буде інший блок з фото */
 .our-job-title {
@@ -138,6 +160,16 @@ h1 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
+}
+footer {
+  height: 250px;
+  width: 1600px;
+  background-color: #2F303A;
+}
+.h3-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
 }
 /* Добавимо в футері властивості для фіз. адреси */
 .footer-subtitle {
