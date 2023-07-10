@@ -21,12 +21,24 @@ ul {
 a {
   text-decoration: none;
 }
+
 header {
   width: 1600px;
-  height: 100px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 1px solid red;
+  
 }
+
+.header-position {
+  display: flex;
+  align-items: center;
+
+}
+
 .nav-list {
   display: flex;
+  margin-left: 92px;
 }
 /* Робимо логотип як на макеті ( не забуваємо дати йому інший шрифт Raleway, також прописуємо line height індексом )*/
 .logo-header-link {
@@ -54,6 +66,8 @@ header {
 }
 .contacts-list {
   display: flex;
+  margin-left: auto;
+
 }
 /* Пропишемо властивості елементів списку контактів */
 .contacts-list-item {
@@ -65,6 +79,9 @@ header {
   color: #757575;
   margin-left: 50px;
 }
+.contacts-list-item + .contacts-list-item {
+  margin-left: 50px;
+}
 /* Також пропишемо ховер */
 .contacts-list-item:hover {
   color: #2196f3;
@@ -73,10 +90,14 @@ header {
   height: 600px;
   width: 1600px;
   background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 
 /* Пропишемо властивості для заголовку ( Не буде відображатися тому що колір білий, як і колір фону ) */
-h1 {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -84,6 +105,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 696px;
 }
 /* Добавимо властивості для кнопки */
 .order-button {
